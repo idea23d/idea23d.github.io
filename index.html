@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <meta content="Idea-2-3D" name="title" />
+  <meta content="Idea23D" name="title" />
   <meta content="Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs" name="description" />
   <meta content="3D Generative Model, Computer Vision, Computer Graphics" name="keywords" />
   <meta content="index, follow" name="robots" />
@@ -11,7 +11,7 @@
   <meta content="English" name="language" />
   <meta content="idea23d" name="author" />
   
-  <title>Idea-2-3D</title>
+  <title>Idea23D</title>
   
   <link rel="icon" type="img/x-icon" href="img/favicon.ico" />
   <!-- Bootstrap -->
@@ -48,6 +48,9 @@
   <script src="js/index.js"></script>
 
   <style>
+    button[aria-expanded="false"] {
+      display: none;
+    }
     .gradient-text {
       background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
       -webkit-background-clip: text;
@@ -303,33 +306,80 @@
 </head>
 
 <body>
-  <!-- cover -->
+
+  
   <section>
     <div class="jumbotron text-center mt-0">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <!-- <div class="d-flex align-items-center justify-content-center"> -->
-              <h1 style="font-weight: bold;">
-                <span class="gradient-text">Idea-2-3D</span>
-                
-                <span>
-                 : Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs
-                </span>
+
+              <h1 style="font-weight: bold; font-size: 36px;">
+                <span class="gradient-text">Idea23D</span>
+                <span> : Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs</span>
               </h1>
 
-            </a>
-          <!-- </h5> -->
-            <p>
+              <br>
 
-            </p>
+              <a href="https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ" target="_blank" style="font-size: 24px;">Junhao Chen<sup>*1,2</sup> </a>,
+              <a href="https://scholar.google.com/citations?hl=en&user=_wyYvQsAAAAJ" target="_blank" style="font-size: 24px;">Xiang Li<sup>*3</sup> </a>,
+              <a href="https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en" target="_blank" style="font-size: 24px;">Xiaojun Ye<sup>4</sup> </a>,
+              <a target="_blank" style="font-size: 24px;">Chao Li<Link></Link><sup>5</sup> </a>,
+              <a href="https://scholar.google.com/citations?user=JHvyYDQAAAAJ" target="_blank" style="font-size: 24px;">Zhaoxin Fan<sup>†6</sup> </a>,
+              <a href="https://scholar.google.com/citations?hl=en&user=ygQznUQAAAAJ" target="_blank" style="font-size: 24px;">Hao Zhao<sup>†1</sup> </a>
+
+              <br>
+
+          <!-- </h5> -->
+          <p style="font-size: 20px;">
+            <sup>1 </sup>Institute for AI Industry Research (AIR), Tsinghua University
+            <br>
+            <sup>2 </sup>Tsinghua Shenzhen International Graduate School, Tsinghua University
+            <br>
+            <sup>3 </sup>School of Software and Microelectronics, Peking University
+            <br>
+            <sup>4 </sup>College of Computer Science, Zhejiang University
+            <br>
+            <sup>5 </sup>College of Computer Science and Technology, Harbin Engineering University
+            <br>
+            <sup>6 </sup>Beijing Advanced Innovation Center for Future Blockchain and Privacy Computing, School of Artificial Intelligence, Beihang University
+            
+            
+
+            <span class="eql-cntrb"><small><br><sup>* </sup>Indicates Equal Contribution</small></span>
+            <span style="margin: 1em;"></span>
+            <span class="eql-cntrb"><small><sup>† </sup>Indicates Corresponding Author</small></span>
+
+          </p>
+
+
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2404.04363.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
                 
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2404.04363" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/idea23d/Idea23D" target="_blank"
+                  <a href="https://github.com/yisuanwang/Idea23D" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -343,14 +393,20 @@
                   <a href="https://colab.research.google.com/drive/1u_lJRvxIlBUPjC_Lou57SWLEnc5vLgQ6#scrollTo=gowB9aTSSSPK" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-github"></i>
+                      <img src="./img/icon_colab.png">
                     </span>
-                    <span>Colab</span>
+                    <span>Colab Demo</span>
                   </a>
                 </span>
 
               </div>
             </div>
+
+          <!-- Add News Section -->
+          <p style="font-size: 20px; color: #f39c12; font-weight: bold; margin-top: 20px;">
+            📰 <strong>News:</strong> Our paper has been accepted by <strong>COLING 2025</strong>! 🎉 See you in Abu Dhabi, UAE, from January 19 to 24, 2025!
+          </p>
+
           </div>
         </div>
       </div>
@@ -586,183 +642,72 @@
       </div>
     </section>
 
-
+    <!-- citing -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          </br>
+          </br>
+          <h3>Citation</h3>
+          <hr style="margin-top: 0px" />
+          <pre style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 20px">
+  <code>@article{chen2024idea23d,
+    title={Idea-2-3D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs}, 
+    author={Junhao Chen and Xiang Li and Xiaojun Ye and Chao Li and Zhaoxin Fan and Hao Zhao},
+    year={2024},
+    eprint={2404.04363},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }</code></pre>
+          <hr />
+        </div>
+      </div>
+    </div>
   
+    <footer class="text-center" style="margin-bottom: 10px">
+        This page is built upon
+      <a href="https://menyifang.github.io/projects/En3D/index.html" target="_blank">EN3D</a>.
+    </footer>
+  
+
   <section class="results-section">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          <!-- 所有按钮合并到一起 -->
           <h5>
             <button aria-controls="renbody-results" aria-expanded="false" class="btn btn-primary" data-target="#renbody-results" data-toggle="collapse" id="renbody-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
             <button aria-controls="mobilestage-results" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-results" data-toggle="collapse" id="mobilestage-results-button" type="button">
             </button>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="outdoor-results" aria-expanded="false" class="btn btn-primary" data-target="#outdoor-results" data-toggle="collapse" id="outdoor-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      <div class="collapse" id="outdoor-results">
-        <div class="col-md-12">
-          
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="n3dv-results" aria-expanded="false" class="btn btn-primary" data-target="#n3dv-results" data-toggle="collapse" id="n3dv-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-      </div>
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="nhr-results" aria-expanded="false" class="btn btn-primary" data-target="#nhr-results" data-toggle="collapse" id="nhr-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="zjumocap-results" aria-expanded="false" class="btn btn-primary" data-target="#zjumocap-results" data-toggle="collapse" id="zjumocap-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="mobilestage-single-results" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-single-results" data-toggle="collapse" id="mobilestage-single-results-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="nhr-demos" aria-expanded="false" class="btn btn-primary" data-target="#nhr-demos" data-toggle="collapse" id="nhr-demos-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="zjumocap-demos" aria-expanded="false" class="btn btn-primary" data-target="#zjumocap-demos" data-toggle="collapse" id="zjumocap-demos-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="mobilestage-demos" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-demos" data-toggle="collapse" id="mobilestage-demos-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="n3dv-demos" aria-expanded="false" class="btn btn-primary" data-target="#n3dv-demos" data-toggle="collapse" id="n3dv-demos-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="kplanes-comparisons" aria-expanded="false" class="btn btn-primary" data-target="#kplanes-comparisons" data-toggle="collapse" id="kplanes-comparisons-button" type="button">
             </button>
-          </h5>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  <section class="results-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h5>
             <button aria-controls="enerf-comparisons" aria-expanded="false" class="btn btn-primary" data-target="#enerf-comparisons" data-toggle="collapse" id="enerf-comparisons-button" type="button">
             </button>
           </h5>
         </div>
       </div>
-      
     </div>
   </section>
-
-
+  
 
   <script type="text/javascript">
     var sc_project = 12931644;
