@@ -1,0 +1,1 @@
+Attach the head of <IMG>owl.png</IMG> to <OBJ>lamp.obj</OBJ> to make a lamp with owl-like vision.

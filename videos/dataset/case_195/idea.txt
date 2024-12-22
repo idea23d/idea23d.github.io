@@ -1,0 +1,1 @@
+Combine <IMG>lion.png</IMG> with <OBJ>chair.obj</OBJ> to create a lion-themed chair.

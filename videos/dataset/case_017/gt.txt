@@ -1,0 +1,5 @@
+The 3D model now features Pikachu sitting atop a Poké Ball, maintaining its original seated position. Pikachu retains its stylized, cartoon-like appearance with a predominantly yellow body, smooth texture, and distinctive features such as large eyes, red cheek patches, and elongated ears with darker tips. Its body is crouched, with limbs tucked under and the lightning bolt-shaped tail adding dynamism to the character.
+
+Pikachu is positioned on the Poké Ball, which is a spherical object with a classic design from the Pokémon franchise. The Poké Ball is smoothly textured with a red top half, white bottom half, and a black horizontal band with a central button, capturing its iconic look.
+
+The OBJ files, Pikachu.obj and Pokeball.obj, represent these respective models. Pikachu.obj showcases a playful and engaging character design, while Pokeball.obj captures the recognizable color pattern and design elements of a Poké Ball.

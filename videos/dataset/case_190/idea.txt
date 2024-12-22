@@ -1,0 +1,1 @@
+Attach the fins of <IMG>dolphin.png</IMG> to <OBJ>boat.obj</OBJ> to create a dolphin-shaped boat.

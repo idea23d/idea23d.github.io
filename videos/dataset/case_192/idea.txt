@@ -1,0 +1,1 @@
+Attach the tail of <IMG>dragon.png</IMG> to <OBJ>car.obj</OBJ> to create a dragon-themed car.

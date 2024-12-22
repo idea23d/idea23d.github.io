@@ -1,0 +1,1 @@
+Attach the body of <IMG>whale.png</IMG> to <OBJ>boat.obj</OBJ> to create a whale-shaped boat.

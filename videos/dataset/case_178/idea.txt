@@ -1,0 +1,1 @@
+Combine <IMG>golden_eagle.png</IMG> with <OBJ>tree.obj</OBJ> to create a tree with eagle wings.

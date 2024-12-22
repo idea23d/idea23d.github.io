@@ -1,0 +1,1 @@
+Combine <IMG>sunflower.png</IMG> with <OBJ>lamp.obj</OBJ> to design a lamp resembling a sunflower.

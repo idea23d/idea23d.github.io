@@ -1,0 +1,1 @@
+Combine <OBJ>watch.obj</OBJ> with <OBJ>Doraemon.obj</OBJ> to create a Doraemon-themed watch.

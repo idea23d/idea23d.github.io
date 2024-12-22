@@ -1,0 +1,1 @@
+Combine <IMG>R2D2.png</IMG> with <IMG>Goku.png</IMG> to create an R2D2-Goku robot.

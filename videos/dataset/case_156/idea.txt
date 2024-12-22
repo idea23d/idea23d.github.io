@@ -1,0 +1,1 @@
+Combine <OBJ>camera.obj</OBJ> with <OBJ>Pikachu.obj</OBJ> to create a Pikachu-themed camera.

@@ -1,0 +1,1 @@
+Combine <IMG>butterfly_wings.png</IMG> with <OBJ>lamp.obj</OBJ> to create a lamp adorned with butterfly wings.

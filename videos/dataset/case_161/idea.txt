@@ -1,0 +1,1 @@
+Combine <OBJ>Pokeball.obj</OBJ> with 'magical glowing effect' to create a glowing Pokeball.

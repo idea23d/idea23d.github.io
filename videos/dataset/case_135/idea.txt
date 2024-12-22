@@ -1,0 +1,1 @@
+Combine <OBJ>notebook.obj</OBJ> with <OBJ>pen.obj</OBJ> to create an all-in-one notebook and pen holder.

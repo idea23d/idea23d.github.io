@@ -1,0 +1,1 @@
+Combine <IMG>phoenix.png</IMG> with <OBJ>lamp.obj</OBJ> to design a lamp inspired by a phoenix.

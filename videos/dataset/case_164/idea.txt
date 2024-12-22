@@ -1,0 +1,1 @@
+Combine <OBJ>Doraemon_bamboo_copter.obj</OBJ> with 'flying functionality' to create a functional bamboo copter.

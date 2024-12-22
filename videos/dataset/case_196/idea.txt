@@ -1,0 +1,1 @@
+Attach the wings of <IMG>butterfly.png</IMG> to <OBJ>chair.obj</OBJ> to create a chair with butterfly wings.

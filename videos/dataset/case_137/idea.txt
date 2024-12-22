@@ -1,0 +1,1 @@
+Combine <OBJ>umbrella.obj</OBJ> with <OBJ>rain_shoes.obj</OBJ> to create a set of matching umbrella and rain shoes.

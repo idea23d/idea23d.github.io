@@ -1,0 +1,1 @@
+Combine <OBJ>mirror.obj</OBJ> with <OBJ>picture_frame.obj</OBJ> to create a mirrored picture frame.

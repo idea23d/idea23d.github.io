@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -10,22 +9,21 @@
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
   <meta content="English" name="language" />
   <meta content="idea23d" name="author" />
-  
+
   <title>Idea23D</title>
-  
+
   <link rel="icon" type="img/x-icon" href="./img/favicon.ico" />
   <!-- Bootstrap -->
   <script src="js/video_comparison.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap-4.4.1.js"></script>
 
-
   <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700;800;900&amp;display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css" rel="stylesheet" />
-<!--  <link href="img/favicon1.eps" rel="icon" sizes="any" type="image/svg+xml" />-->
+  <!-- <link href="img/favicon1.eps" rel="icon" sizes="any" type="image/svg+xml" />-->
 
   <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/contrib/auto-render.min.js"></script>
@@ -48,19 +46,33 @@
   <script src="js/index.js"></script>
 
   <style>
+    /* 覆盖全局 img 样式，仅应用于具有 .full-width-img 类的图片 */
+    .full-width-img {
+    display: block;       /* 保持块级元素 */
+    width: 60%;          /* 拉满父容器宽度 */
+    max-width: 100%;      /* 移除全局的 max-width 限制 */
+    height: auto;         /* 保持纵横比 */
+    margin: 0 auto;       /* 居中对齐（可选） */
+    border-radius: 5px;   /* 保持现有的圆角 */
+    object-fit: cover;    /* 保持现有的裁剪效果 */
+    }
+
+
     button[aria-expanded="false"] {
       display: none;
     }
+
     .gradient-text {
-      background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+      background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
       -webkit-background-clip: text;
       color: transparent;
       background-clip: text;
     }
+
     .title span {
-        background: -webkit-linear-gradient(45deg, #7ed56f, #28b485);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(45deg, #7ed56f, #28b485);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     code {
@@ -120,7 +132,6 @@
       position: absolute;
       bottom: 10%;
       left: 90%;
-
       /* Adjust vertical position */
       text-align: center;
       /* Center the content horizontally */
@@ -154,9 +165,10 @@
       margin-top: 5px;
       margin-bottom: 5px;
     }
+
     .row.sm-gutters-2 {
-        justify-content: center;
-        align-items:center;
+      justify-content: center;
+      align-items: center;
     }
 
     .row.sm-gutters>.col-md-4 {
@@ -172,16 +184,18 @@
       padding-top: 5px;
       padding-bottom: 5px;
     }
-  .row.sm-gutters>.col-md-6-2 {
+
+    .row.sm-gutters>.col-md-6-2 {
       justify-content: center;
-      align-items:center;
-  }
-  .row.sm-gutters>.col-md-6-3 {
+      align-items: center;
+    }
+
+    .row.sm-gutters>.col-md-6-3 {
       padding-right: 5px;
       padding-left: 5px;
       padding-top: 5px;
       padding-bottom: 5px;
-  }
+    }
 
     .row.sm-gutters>.col-md-12 {
       padding-top: 5px;
@@ -227,6 +241,11 @@
       object-position: center;
       border-radius: 5px;
       margin: 5px;
+      aspect-ratio: 1 / 1;
+      /* 设置为正方形 */
+      width: 48%;
+      max-width: 300px;
+      /* Ensure moderate size */
     }
 
     .zoom-element {
@@ -280,77 +299,183 @@
     }
 
     .a16x9demo {
-      aspect-ratio: 1920/1152;
+      aspect-ratio: 16 / 9;
     }
 
     .a4x3demo {
-      aspect-ratio: 1352/1086;
+      aspect-ratio: 1352 / 1086;
     }
 
     .a1x1demo {
-      aspect-ratio: 1600/1672;
+      aspect-ratio: 1600 / 1672;
     }
-  
-  img {
-        display: block;
-        margin: 0 auto;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      max-width: 300px;
+      object-fit: cover;
+    }
+
+    /* 新增样式 */
+    #dataset-section {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+
+    #dataset-section .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+      margin-bottom: 20px;
+    }
+
+    #dataset-section .card:hover {
+      transform: scale(1.02);
+    }
+
+    #dataset-section .card-header {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+
+    #dataset-section .card-body {
+      padding: 15px;
+    }
+
+    /* Styles for embedded media within input */
+    #dataset-section .input-media-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+      justify-content: flex-start;
+    }
+
+    #dataset-section .input-media-container img,
+    #dataset-section .input-media-container video,
+    #dataset-section .output-media-container video {
+      width: 48%;
+      max-width: 150px;
+      /* Ensure moderate size */
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    /* Ensure output videos have the same styling */
+    #dataset-section .output-media-container video {
+      /* Additional styles if needed */
+    }
+
+    @media (max-width: 768px) {
+      #dataset-section .input-media-container img,
+      #dataset-section .input-media-container video,
+      #dataset-section .output-media-container video {
+        width: 100%;
       }
-  
+    }
+
+    /* styles.css */
+
+    /* 为图片容器和视频容器应用Flexbox布局 */
+    .image-container,
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* 允许子元素换行 */
+      gap: 10px;
+      /* 子元素之间的间距 */
+      justify-content: flex-start;
+      /* 子元素左对齐 */
+      margin-bottom: 20px;
+      /* 容器底部的间距 */
+    }
+
+    /* 设置图片的样式 */
+    .image-container img {
+      max-width: 300px;
+      /* 最大宽度 */
+      height: auto;
+      /* 高度自适应 */
+      border-radius: 5px;
+      /* 可选：添加圆角 */
+      object-fit: cover;
+      /* 可选：裁剪图片以适应容器 */
+    }
+
+    /* 设置视频的样式 */
+    .video-container video {
+      max-width: 300px;
+      /* 最大宽度 */
+      height: auto;
+      /* 高度自适应 */
+      border-radius: 5px;
+      /* 可选：添加圆角 */
+      object-fit: cover;
+      /* 可选：裁剪视频以适应容器 */
+    }
+
+    /* 覆盖全局 img 和 video 样式，仅应用于 .card-text 内的元素 */
+    .card-text img,
+    .card-text video {
+    display: inline-block; /* 允许并排显示 */
+    width: 150px;          /* 设置较小的宽度 */
+    height: auto;          /* 保持纵横比 */
+    margin: 0 5px;         /* 设置左右间距 */
+    vertical-align: middle; /* 垂直对齐 */
+    }
+
+
   </style>
-  <script>
-
-
-
-  </script>
-  </link>
 </head>
 
 <body>
 
-  
   <section>
     <div class="jumbotron text-center mt-0">
       <div class="container">
         <div class="row">
           <div class="col-12">
 
-              <h1 style="font-weight: bold; font-size: 36px;">
-                <span class="gradient-text">Idea23D</span>
-                <span> : Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs</span>
-              </h1>
+            <h1 style="font-weight: bold; font-size: 36px;">
+              <span class="gradient-text">Idea23D</span>
+              <span> : Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs</span>
+            </h1>
 
+            <br>
+
+            <a href="https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ" target="_blank" style="font-size: 24px;">Junhao Chen<sup>*1,2</sup> </a>,
+            <a href="https://scholar.google.com/citations?hl=en&user=_wyYvQsAAAAJ" target="_blank" style="font-size: 24px;">Xiang Li<sup>*3</sup> </a>,
+            <a href="https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en" target="_blank" style="font-size: 24px;">Xiaojun Ye<sup>4</sup> </a>,
+            <a target="_blank" style="font-size: 24px;">Chao Li<Link></Link><sup>5</sup> </a>,
+            <a href="https://scholar.google.com/citations?user=JHvyYDQAAAAJ" target="_blank" style="font-size: 24px;">Zhaoxin Fan<sup>†6</sup> </a>,
+            <a href="https://scholar.google.com/citations?hl=en&user=ygQznUQAAAAJ" target="_blank" style="font-size: 24px;">Hao Zhao<sup>†1</sup> </a>
+
+            <br>
+
+            <!-- </h5> -->
+            <p style="font-size: 20px;">
+              <sup>1 </sup>Institute for AI Industry Research (AIR), Tsinghua University
               <br>
-
-              <a href="https://scholar.google.com/citations?hl=en&user=uVMnzPMAAAAJ" target="_blank" style="font-size: 24px;">Junhao Chen<sup>*1,2</sup> </a>,
-              <a href="https://scholar.google.com/citations?hl=en&user=_wyYvQsAAAAJ" target="_blank" style="font-size: 24px;">Xiang Li<sup>*3</sup> </a>,
-              <a href="https://scholar.google.com/citations?user=BKMYsm4AAAAJ&hl=en" target="_blank" style="font-size: 24px;">Xiaojun Ye<sup>4</sup> </a>,
-              <a target="_blank" style="font-size: 24px;">Chao Li<Link></Link><sup>5</sup> </a>,
-              <a href="https://scholar.google.com/citations?user=JHvyYDQAAAAJ" target="_blank" style="font-size: 24px;">Zhaoxin Fan<sup>†6</sup> </a>,
-              <a href="https://scholar.google.com/citations?hl=en&user=ygQznUQAAAAJ" target="_blank" style="font-size: 24px;">Hao Zhao<sup>†1</sup> </a>
-
+              <sup>2 </sup>Tsinghua Shenzhen International Graduate School, Tsinghua University
               <br>
+              <sup>3 </sup>School of Software and Microelectronics, Peking University
+              <br>
+              <sup>4 </sup>College of Computer Science, Zhejiang University
+              <br>
+              <sup>5 </sup>College of Computer Science and Technology, Harbin Engineering University
+              <br>
+              <sup>6 </sup>Beijing Advanced Innovation Center for Future Blockchain and Privacy Computing, School of Artificial Intelligence, Beihang University
 
-          <!-- </h5> -->
-          <p style="font-size: 20px;">
-            <sup>1 </sup>Institute for AI Industry Research (AIR), Tsinghua University
-            <br>
-            <sup>2 </sup>Tsinghua Shenzhen International Graduate School, Tsinghua University
-            <br>
-            <sup>3 </sup>School of Software and Microelectronics, Peking University
-            <br>
-            <sup>4 </sup>College of Computer Science, Zhejiang University
-            <br>
-            <sup>5 </sup>College of Computer Science and Technology, Harbin Engineering University
-            <br>
-            <sup>6 </sup>Beijing Advanced Innovation Center for Future Blockchain and Privacy Computing, School of Artificial Intelligence, Beihang University
-            
-            
+              <span class="eql-cntrb"><small><br><sup>* </sup>Indicates Equal Contribution</small></span>
+              <span style="margin: 1em;"></span>
+              <span class="eql-cntrb"><small><sup>† </sup>Indicates Corresponding Author</small></span>
 
-            <span class="eql-cntrb"><small><br><sup>* </sup>Indicates Equal Contribution</small></span>
-            <span style="margin: 1em;"></span>
-            <span class="eql-cntrb"><small><sup>† </sup>Indicates Corresponding Author</small></span>
-
-          </p>
+            </p>
 
 
             <div class="column has-text-centered">
@@ -365,7 +490,7 @@
                     <span>Paper</span>
                   </a>
                 </span>
-                
+
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/2404.04363" target="_blank"
@@ -387,25 +512,25 @@
                     <span>Github</span>
                   </a>
                 </span>
-                
-                <!-- Colab link -->
+
+                <!-- Colab link
                 <span class="link-block">
                   <a href="https://colab.research.google.com/drive/1u_lJRvxIlBUPjC_Lou57SWLEnc5vLgQ6#scrollTo=gowB9aTSSSPK" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <img src="./img/icon_colab.png">
+                      <img src="./img/icon_colab.png" alt="Colab Icon">
                     </span>
                     <span>Colab Demo</span>
                   </a>
-                </span>
+                </span> -->
 
               </div>
             </div>
 
-          <!-- Add News Section -->
-          <p style="font-size: 20px; color: #f39c12; font-weight: bold; margin-top: 20px;">
-            📰 <strong>News:</strong> Our paper has been accepted by <strong>COLING 2025</strong>! 🎉 See you in Abu Dhabi, UAE, from January 19 to 24, 2025!
-          </p>
+            <!-- Add News Section -->
+            <p style="font-size: 20px; color: #f39c12; font-weight: bold; margin-top: 20px;">
+              📰 <strong>News:</strong> Our paper has been accepted by <strong>COLING 2025</strong>! 🎉 See you in Abu Dhabi, UAE, from January 19 to 24, 2025!
+            </p>
 
           </div>
         </div>
@@ -415,30 +540,29 @@
 
 
   <section>
-    <div class="container" style="text-align: center;"> 
-        <video autoplay="" class="a16x9demo" data-desktop-vid1="videos\teaser.mp4"
-            loop="" muted="" playsinline="" poster="img/spinner.svg" width="60%">
-        </video>
+    <div class="container" style="text-align: center;">
+      <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/teaser.mp4"
+        playsinline="" poster="img/spinner.svg" width="60%">
+      </video>
 
-        <h6 style="color: #8899a5">
-          The Idea-2-3D framework synergizes the capabilities of the Large Multimodal Model (LMM), Text-to-Image (T2I), and Image-to-3D (I23D) models to transform complex multimodal input IDEAs into tangible 3D models. 
-          This process begins with the user articulating high-level 3D design requirements IDEA. 
-          Following this, the LMM generates textual prompts (Prompt Generation) that are then converted into 3D models. 
-          These models are evaluated through a Multiview Image Generation and Evaluation process, leading to the Selection of an Optimal 3D Model. 
-          Subsequently, the Text-to-3D (T-2-3D) prompt is refined (Feedback Generation) using insights from the GPT-4V. 
-          Additionally, an integrated memory module (see Sec. Memory Module), while not depicted here, meticulously records each iteration, facilitating a multimodal, iterative self-refinement cycle within the framework.
-        </h6>
+      <h6 style="color: #8899a5">
+        The Idea-2-3D framework synergizes the capabilities of the Large Multimodal Model (LMM), Text-to-Image (T2I), and Image-to-3D (I23D) models to transform complex multimodal input IDEAs into tangible 3D models.
+        This process begins with the user articulating high-level 3D design requirements IDEA.
+        Following this, the LMM generates textual prompts (Prompt Generation) that are then converted into 3D models.
+        These models are evaluated through a Multiview Image Generation and Evaluation process, leading to the Selection of an Optimal 3D Model.
+        Subsequently, the Text-to-3D (T-2-3D) prompt is refined (Feedback Generation) using insights from the GPT-4V.
+        Additionally, an integrated memory module (see Sec. Memory Module), while not depicted here, meticulously records each iteration, facilitating a multimodal, iterative self-refinement cycle within the framework.
+      </h6>
     </div>
-</section>
-
+  </section>
 
 
 
   <section>
-    <div class="container"  >
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-12 text-center">
-            
+
           <div class="carousel slide" data-interval="10000" data-ride="carousel" id="bkgdCarousel">
             <ol class="carousel-indicators">
               <li class="active" data-slide-to="0" data-target="#bkgdCarousel">
@@ -461,26 +585,14 @@
               </li>
             </ol>
 
-            
 
-            <div class="carousel-inner" >
+
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row sm-gutters">
                   <div class="col-md-12">
-                    <video autoplay="" class="a16x9demo" data-desktop-vid1="videos\comp1.mp4"
-                         loop="" muted="" playsinline="" poster="img/spinner.svg" width="60%">
-   
-                    </video>
-                  </div>
-                </div>
-              </div>
- 
-              <div class="carousel-item">
-                <div class="row sm-gutters">
-                  <div class="col-md-12">
-                    <video class="a16x9demo" data-desktop-vid1="videos\comp2.mp4"
-                        data-desktop-vid2="videos\comp2.mp4"
-                        loop="" muted="" playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp1.mp4"
+                      playsinline="" poster="img/spinner.svg" width="60%">
                     </video>
                   </div>
                 </div>
@@ -489,9 +601,9 @@
               <div class="carousel-item">
                 <div class="row sm-gutters">
                   <div class="col-md-12">
-                    <video class="a16x9demo" data-desktop-vid1="videos\comp3.mp4"
-                        data-desktop-vid2="videos\comp3.mp4"
-                        loop="" muted="" playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp2.mp4"
+                      data-desktop-vid2="videos/comp2.mp4"
+                      playsinline="" poster="img/spinner.svg" preload="none" width="60%">
                     </video>
                   </div>
                 </div>
@@ -500,9 +612,9 @@
               <div class="carousel-item">
                 <div class="row sm-gutters">
                   <div class="col-md-12">
-                    <video class="a16x9demo" data-desktop-vid1="videos\comp4.mp4"
-                        data-desktop-vid2="videos\comp4.mp4"
-                        loop="" muted="" playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp3.mp4"
+                      data-desktop-vid2="videos/comp3.mp4"
+                      playsinline="" poster="img/spinner.svg" preload="none" width="60%">
                     </video>
                   </div>
                 </div>
@@ -511,9 +623,9 @@
               <div class="carousel-item">
                 <div class="row sm-gutters">
                   <div class="col-md-12">
-                    <video class="a16x9demo" data-desktop-vid1="videos\comp5.mp4"
-                        data-desktop-vid2="videos\comp5.mp4"
-                        loop="" muted="" playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp4.mp4"
+                      data-desktop-vid2="videos/comp4.mp4"
+                      playsinline="" poster="img/spinner.svg" preload="none" width="60%">
                     </video>
                   </div>
                 </div>
@@ -522,25 +634,25 @@
               <div class="carousel-item">
                 <div class="row sm-gutters">
                   <div class="col-md-12">
-                    <video class="a16x9demo" data-desktop-vid1="videos\comp6.mp4"
-                        data-desktop-vid2="videos\comp6.mp4"
-                        loop="" muted="" playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp5.mp4"
+                      data-desktop-vid2="videos/comp5.mp4"
+                      playsinline="" poster="img/spinner.svg" preload="none" width="60%">
                     </video>
                   </div>
                 </div>
               </div>
-              
-              <!-- <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row sm-gutters">
-                    <div class="col-md-12">
-                      <video autoplay="" class="a16x9demo" data-desktop-vid1="videos\comp1.mp4"
-                           loop="" muted="" playsinline="" poster="img/spinner.svg" width="60%">
-     
-                      </video>
-                    </div>
+
+              <div class="carousel-item">
+                <div class="row sm-gutters">
+                  <div class="col-md-12">
+                    <video autoplay muted loop class="a16x9demo" data-desktop-vid1="videos/comp6.mp4"
+                      data-desktop-vid2="videos/comp6.mp4"
+                      playsinline="" poster="img/spinner.svg" preload="none" width="60%">
+                    </video>
                   </div>
-                </div> -->
+                </div>
+              </div>
+
             </div>
             <a class="carousel-control-prev" data-slide="prev" href="#bkgdCarousel" role="button">
               <span aria-hidden="true" class="carousel-control-prev-icon"></span>
@@ -553,42 +665,15 @@
           </div>
 
 
-             
-          </div>
         </div>
       </div>
     </div>
   </section>
-  
 
-  
-  <!-- Abstract -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h3>Abstract</h3>
-          <hr style="margin-top: 0px" />
-<!--          <img src="img/teaser.jpg" width="100%" />-->
-          <p class="text-left">
-            Transforming high-level, abstract ideas into 3D models is a challenging yet crucial task in the field of computer vision and graphics. 
-            Existing methods, such as Text-to-3D (T-2-3D), often behave poorly when dealing with intricate and nuanced language inputs, usually necessitating extensive user interaction. Our paper introduces a new framework, Idea-to-3D (Idea-2-3D), which harnesses the power of Large Multimodal Models (LMMs) to address these challenges. 
-            Specifically, powered by GPT-4V(ision), Idea-2-3D is adept at interpreting multimodal inputs, including interelaved image-text sequences, to automatically design and generate 3D models. 
-            Despite the potential of LMMs in enhancing T-2-3D, integrating and deciphering multimodal inputs presents its own set of difficulties. 
-            Idea-2-3D resolves these issues with its distinctive iterative self-refinement technique, a memory module that logs iterative progress, and its capacity to craft high-fidelity 3D models from user ideas. 
-            Our extensive user preference experiments substantiate Idea-2-3D's effectiveness, particularly in complex design tasks. 
-            The user study demonstrates that in 94.2\% of cases, Idea-2-3D meets users' requirements, marking a degree of match between IDEA and 3D models that is 2.3 times higher than existing T-2-3D methods. 
-            Moreover, in 93.5\% of the cases, users agreed that Idea-2-3D was better than T-2-3D.
-            Codes, data and models will made publicly available.
-
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Method -->
-  <section>
+<!-- Method -->
+<section>
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -596,79 +681,68 @@
           <hr style="margin-top: 0px" />
           <!-- <video autoplay="" class="a16x9demo" data-desktop-vid1="videos\overview.mp4"
             loop="" muted="" playsinline=""  width="100%">
-        </video> -->
-        
-          <img src="img/pipeline.png" width="60%" />
+          </video> -->
+  
+          <img src="img/pipeline.png" class="full-width-img" alt="Pipeline Diagram" />
           <p>
-            Overview of the framework of Idea-2-3D, which employs LMM to explore the T-2-3D model's potential through multimodal iterative self-refinement to provide valid T-2-3D prompts for the input user IDEA. 
-            Green rounded rectangles indicate steps completed by GPT-4V. 
-            Purple rounded rectangles indicate T-2-3D modules, including T2I models and I-2-3D models. 
-            The yellow rounded rectangle indicates the off-the-shelf 3D model multi-view generation algorithm. 
-            To get a better reconstruction, we remove the background of the image between steps 2 and 3. 
+            Overview of the framework of Idea-2-3D, which employs LMM to explore the T-2-3D model's potential through multimodal iterative self-refinement to provide valid T-2-3D prompts for the input user IDEA.
+            Green rounded rectangles indicate steps completed by GPT-4V.
+            Purple rounded rectangles indicate T-2-3D modules, including T2I models and I-2-3D models.
+            The yellow rounded rectangle indicates the off-the-shelf 3D model multi-view generation algorithm.
+            To get a better reconstruction, we remove the background of the image between steps 2 and 3.
             The blue color indicates the memory module, which saves all the feedback from previous rounds, the best 3D model, and the best text prompt.
           </p>
         </div>
       </div>
     </div>
   </section>
-
-    <!-- Ablation Study -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h3>Ablation Study</h3>
-            <div class="container" style="text-align: center;">
-              <!-- <hr style="height: 48px; vertical-align: middle;" /> -->
-              <video autoplay="" class="a16x9demo" data-desktop-vid1="videos\ablation.mp4"
-                loop="" muted="" playsinline=""  width="60%">
-            </video>
-            </div>
-            
-          
-            <!-- <img src="img/pipeline.png" width="80%" /> -->
-            <p>
-              From the supplementary experiments (sixth iteration and seventh iteration), it can be seen that despite the increase in the number of iterations, there is no significant improvement in the quality of the 3D model after removing our proposed module.
-
-              The quantitative analysis in shows that our proposed MEMORY module can effectively prevent the 3D model generation effect of each iteration from deviating from the user input.
-
-              Our proposed feedback can effectively improve the speed of iterative convergence, i.e., the generated 3D model can reach the matching with user input items in shorter iteration rounds.
-
-              If the storage information of the previous model in the memory module is removed, there will be a lower upper limit for the convergence of the generated 3D model to match the user input.
   
-            </p>
-          </div>
+
+  <!-- 新增的 Dataset 展示部分 -->
+  <section id="dataset-section">
+    <div class="container">
+      <h3 class="text-center">Evaluation Dataset and Showcase</h3>
+      <hr />
+      <div class="row mb-4">
+        <div class="col-md-12 text-center">
+          <input type="text" id="search-input" class="form-control" placeholder="Search by Case ID or Keyword">
         </div>
       </div>
-    </section>
-
-    <!-- citing -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          </br>
-          </br>
-          <h3>Citation</h3>
-          <hr style="margin-top: 0px" />
-          <pre style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 20px">
-  <code>@article{chen2024idea23d,
-    title={Idea-2-3D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs}, 
-    author={Junhao Chen and Xiang Li and Xiaojun Ye and Chao Li and Zhaoxin Fan and Hao Zhao},
-    year={2024},
-    eprint={2404.04363},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
-  }</code></pre>
-          <hr />
-        </div>
+      <div id="cases-container" class="row">
+        <!-- 动态生成的案例将插入到这里 -->
       </div>
     </div>
-  
-    <footer class="text-center" style="margin-bottom: 10px">
-        This page is built upon
-      <a href="https://menyifang.github.io/projects/En3D/index.html" target="_blank">EN3D</a>.
-    </footer>
-  
+  </section>
+  <!-- 结束的 Dataset 展示部分 -->
+
+
+  <!-- Citing -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        </br>
+        </br>
+        <h3>Citation</h3>
+        <hr style="margin-top: 0px" />
+        <pre style="background-color: #e9eeef; padding: 1.5em 1.5em; border-radius: 20px">
+<code>@article{chen2024idea23d,
+  title={Idea-2-3D: Collaborative LMM Agents Enable 3D Model Generation from Interleaved Multimodal Inputs},
+  author={Junhao Chen and Xiang Li and Xiaojun Ye and Chao Li and Zhaoxin Fan and Hao Zhao},
+  year={2024},
+  eprint={2404.04363},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}</code></pre>
+        <hr />
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center" style="margin-bottom: 10px">
+    This page is built upon
+    <a href="https://menyifang.github.io/projects/En3D/index.html" target="_blank">EN3D</a>.
+  </footer>
+
 
   <section class="results-section">
     <div class="container">
@@ -677,37 +751,50 @@
           <!-- 所有按钮合并到一起 -->
           <h5>
             <button aria-controls="renbody-results" aria-expanded="false" class="btn btn-primary" data-target="#renbody-results" data-toggle="collapse" id="renbody-results-button" type="button">
+              RenBody Results
             </button>
             <button aria-controls="mobilestage-results" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-results" data-toggle="collapse" id="mobilestage-results-button" type="button">
+              MobileStage Results
             </button>
             <button aria-controls="outdoor-results" aria-expanded="false" class="btn btn-primary" data-target="#outdoor-results" data-toggle="collapse" id="outdoor-results-button" type="button">
+              Outdoor Results
             </button>
             <button aria-controls="n3dv-results" aria-expanded="false" class="btn btn-primary" data-target="#n3dv-results" data-toggle="collapse" id="n3dv-results-button" type="button">
+              N3DV Results
             </button>
             <button aria-controls="nhr-results" aria-expanded="false" class="btn btn-primary" data-target="#nhr-results" data-toggle="collapse" id="nhr-results-button" type="button">
+              NHR Results
             </button>
             <button aria-controls="zjumocap-results" aria-expanded="false" class="btn btn-primary" data-target="#zjumocap-results" data-toggle="collapse" id="zjumocap-results-button" type="button">
+              ZJUMOCap Results
             </button>
             <button aria-controls="mobilestage-single-results" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-single-results" data-toggle="collapse" id="mobilestage-single-results-button" type="button">
+              MobileStage Single Results
             </button>
             <button aria-controls="nhr-demos" aria-expanded="false" class="btn btn-primary" data-target="#nhr-demos" data-toggle="collapse" id="nhr-demos-button" type="button">
+              NHR Demos
             </button>
             <button aria-controls="zjumocap-demos" aria-expanded="false" class="btn btn-primary" data-target="#zjumocap-demos" data-toggle="collapse" id="zjumocap-demos-button" type="button">
+              ZJUMOCap Demos
             </button>
             <button aria-controls="mobilestage-demos" aria-expanded="false" class="btn btn-primary" data-target="#mobilestage-demos" data-toggle="collapse" id="mobilestage-demos-button" type="button">
+              MobileStage Demos
             </button>
             <button aria-controls="n3dv-demos" aria-expanded="false" class="btn btn-primary" data-target="#n3dv-demos" data-toggle="collapse" id="n3dv-demos-button" type="button">
+              N3DV Demos
             </button>
             <button aria-controls="kplanes-comparisons" aria-expanded="false" class="btn btn-primary" data-target="#kplanes-comparisons" data-toggle="collapse" id="kplanes-comparisons-button" type="button">
+              KPlanes Comparisons
             </button>
             <button aria-controls="enerf-comparisons" aria-expanded="false" class="btn btn-primary" data-target="#enerf-comparisons" data-toggle="collapse" id="enerf-comparisons-button" type="button">
+              ENERF Comparisons
             </button>
           </h5>
         </div>
       </div>
     </div>
   </section>
-  
+
 
   <script type="text/javascript">
     var sc_project = 12931644;
@@ -736,7 +823,9 @@
       'zjumocap-demos-button',
       'mobilestage-demos-button',
       'n3dv-demos-button',
-     /* ...other button ids... */];
+      'kplanes-comparisons-button',
+      'enerf-comparisons-button'
+    ];
     var sectionIds = [
       'mobilestage-results',
       'outdoor-results',
@@ -750,72 +839,80 @@
       'zjumocap-demos',
       'mobilestage-demos',
       'n3dv-demos',
-      /* ...other section ids... */];
+      'kplanes-comparisons',
+      'enerf-comparisons'
+    ];
     for (var i = 0; i < buttonIds.length; i++) {
-      (function (index) {
+      (function(index) {
         var button = document.getElementById(buttonIds[index]);
         var section = document.getElementById(sectionIds[index]);
-        button.addEventListener('click', function () {
-          if (section.classList.contains('show')) {
-            button.innerText = 'Click to Expand';
-            var videos = section.getElementsByTagName('video');
-            for (var j = 0; j < videos.length; j++) {
-              if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-                videos[j].pause();
+        if (button && section) {
+          button.addEventListener('click', function() {
+            if (section.classList.contains('show')) {
+              button.innerText = 'Click to Expand';
+              var videos = section.getElementsByTagName('video');
+              for (var j = 0; j < videos.length; j++) {
+                if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+                  videos[j].pause();
+                }
+              }
+            } else {
+              button.innerText = 'Click to Collapse';
+              var videos = section.getElementsByTagName('video');
+              for (var j = 0; j < videos.length; j++) {
+                videos[j].play();
               }
             }
-          } else {
-            button.innerText = 'Click to Collapse';
-            var videos = section.getElementsByTagName('video');
-            for (var j = 0; j < videos.length; j++) {
-              videos[j].play();
-            }
-          }
-        });
+          });
+        }
       })(i);
     }
 
     var compare_button_ids = [
       'enerf-comparisons-button',
       'kplanes-comparisons-button',
-     /* ...other button ids... */];
+      /* ...other button ids... */
+    ];
     var compare_section_ids = [
       'enerf-comparisons',
       'kplanes-comparisons',
-      /* ...other section ids... */];
+      /* ...other section ids... */
+    ];
     for (var i = 0; i < compare_button_ids.length; i++) {
-      (function (index) {
+      (function(index) {
         var button = document.getElementById(compare_button_ids[index]);
         var section = document.getElementById(compare_section_ids[index]);
-        button.addEventListener('click', function () {
-          if (section.classList.contains('show')) {
-            button.innerText = 'Click to Expand';
-            var videos = section.getElementsByTagName('video');
-            for (var j = 0; j < videos.length; j++) {
-              if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-                videos[j].pause();
+        if (button && section) {
+          button.addEventListener('click', function() {
+            if (section.classList.contains('show')) {
+              button.innerText = 'Click to Expand';
+              var videos = section.getElementsByTagName('video');
+              for (var j = 0; j < videos.length; j++) {
+                if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+                  videos[j].pause();
+                }
+              }
+              var merge = $(document.getElementById(compare_section_ids[index]))[0].getElementsByTagName('canvas')[0];
+              if (merge && merge.hasAttribute('animation_id')) {
+                cancelAnimationFrame(merge.getAttribute('animation_id'));
+              }
+            } else {
+              button.innerText = 'Click to Collapse';
+              var videos = section.getElementsByTagName('video');
+              for (var j = 0; j < videos.length; j++) {
+                videos[j].play();
+                // if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+                // playVids(videos[j].id)
+                resizeAndPlay(videos[j])
+                // }
               }
             }
-            var merge = $(document.getElementById(compare_section_ids[index]))[0].getElementsByTagName('canvas')[0];
-            if (merge.hasAttribute('animation_id')) {
-              cancelAnimationFrame(merge.getAttribute('animation_id'));
-            }
-          } else {
-            button.innerText = 'Click to Collapse';
-            var videos = section.getElementsByTagName('video');
-            for (var j = 0; j < videos.length; j++) {
-              videos[j].play();
-              // if (videos[j].readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-              // playVids(videos[j].id)
-              resizeAndPlay(videos[j])
-              // }
-            }
-          }
-        });
+          });
+        }
       })(i);
     }
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       renderMathInElement(document.body, {
         delimiters: [
           { left: "$", right: "$", display: false },
@@ -831,7 +928,7 @@
       var currentCarousel = $(event.target);
 
       // Check each video in the current carousel
-      currentCarousel.find('video').each(function () {
+      currentCarousel.find('video').each(function() {
         var isVideoInActiveItem = $(this).closest('.carousel-item').hasClass('active');
         if (isVideoInActiveItem) {
           if (this.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
@@ -848,12 +945,12 @@
 
     $('.carousel').on('slid.bs.carousel', handleCarouselSlide);
 
-    $(document).ready(function () {
-      $('video').each(function () {
+    $(document).ready(function() {
+      $('video').each(function() {
         var $video = $(this);
         var $carousel = $video.closest('.carousel');
         if ($carousel.length > 0) {
-          $video.on('ended', function () {
+          $video.on('ended', function() {
             $carousel.carousel('next');
           });
         }
@@ -865,7 +962,7 @@
     }
 
     // fix the element's width and height properties to the current video ones
-    $("video").each(function () {
+    $("video").each(function() {
       if (!this.classList.contains('comparison-video')) {
         $(this).on('loadeddata', update_video_shape);
       }
@@ -873,7 +970,7 @@
 
     // $("#renbody-results-button").click()
 
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       // Get all videos
       var videos = document.querySelectorAll('video');
 
@@ -907,7 +1004,7 @@
 
       videoSize();
 
-      setInterval(function () {
+      setInterval(function() {
         // 选择所有comparison-video类型的视频
         let videos = document.querySelectorAll('.comparison-video');
 
@@ -917,10 +1014,201 @@
             resizeAndPlay(video);
           }
         });
-      }, 10000);  // 每500毫秒检测一次
+      }, 10000); // 每500毫秒检测一次
 
     });
   </script>
+
+  <!-- 新增的 Dataset 展示 JavaScript 代码 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('cases.json')
+        .then(response => response.json())
+        .then(data => {
+          const container = document.getElementById('cases-container');
+          let allCases = data; // 保存所有案例数据
+
+          function renderCases(casesToRender) {
+            container.innerHTML = ''; // 清空当前内容
+            casesToRender.forEach(caseItem => {
+              const caseCol = document.createElement('div');
+              caseCol.className = 'col-12 mb-4';
+
+              const card = document.createElement('div');
+              card.className = 'card';
+
+              // 案例标题
+              const cardHeader = document.createElement('div');
+              cardHeader.className = 'card-header';
+              cardHeader.innerText = `Case ID: ${caseItem.case_id}`;
+              card.appendChild(cardHeader);
+
+              // 案例描述
+              const cardBody = document.createElement('div');
+              cardBody.className = 'card-body';
+
+            //   // 显示 Input 内容
+            //   const inputTitle = document.createElement('h5');
+            //   inputTitle.innerText = "Input:";
+            //   inputTitle.style.fontWeight = 'bold';
+            //   cardBody.appendChild(inputTitle);
+
+            //   const inputText = document.createElement('p');
+            //   inputText.className = 'card-text';
+
+            //   // Replace <IMG> and <OBJ> tags with corresponding media
+            //   let ideaHTML = caseItem.idea;
+
+            //   // Replace <IMG> tags
+            //   ideaHTML = ideaHTML.replace(/<IMG>(.*?)<\/IMG>/g, function(match, p1) {
+            //     // Find the image object with file_name == p1
+            //     const imageObj = caseItem.images.find(img => img.file_name === p1);
+            //     if (imageObj) {
+            //       return `<img src="${imageObj.file_path}" alt="${p1}" style="max-width: 300px; margin: 0 10px;">`;
+            //     } else {
+            //       return `<span style="color: red;">Image ${p1} not found</span>`;
+            //     }
+            //   });
+
+            //   // Replace <OBJ> tags
+            //   ideaHTML = ideaHTML.replace(/<OBJ>(.*?)<\/OBJ>/g, function(match, p1) {
+            //     // Find the video object with obj_file == p1
+            //     const videoObj = caseItem.videos.find(vid => vid.obj_file === p1);
+            //     if (videoObj) {
+            //       return `<video src="${videoObj.video_path}" autoplay loop muted controls style="max-width: 300px; margin: 0 10px;"></video>`;
+            //     } else {
+            //       return `<span style="color: red;">Video for OBJ ${p1} not found</span>`;
+            //     }
+            //   });
+
+            // 显示 Input 内容
+            const inputTitle = document.createElement('h5');
+            inputTitle.innerText = "Input:";
+            inputTitle.style.fontWeight = 'bold';
+            cardBody.appendChild(inputTitle);
+
+            const inputText = document.createElement('p');
+            inputText.className = 'card-text';
+
+            // Replace <IMG> and <OBJ> tags with corresponding media
+            let ideaHTML = caseItem.idea;
+
+            // Replace <IMG> tags
+            ideaHTML = ideaHTML.replace(/<IMG>(.*?)<\/IMG>/g, function(match, p1) {
+            // Find the image object with file_name == p1
+            const imageObj = caseItem.images.find(img => img.file_name === p1);
+            if (imageObj) {
+                return `<img src="${imageObj.file_path}" alt="${p1}" style="width: 150px; height: auto; margin: 0 5px; display: inline-block;">`;
+            } else {
+                return `<span style="color: red;">Image ${p1} not found</span>`;
+            }
+            });
+
+            // Replace <OBJ> tags
+            ideaHTML = ideaHTML.replace(/<OBJ>(.*?)<\/OBJ>/g, function(match, p1) {
+            // Find the video object with obj_file == p1
+            const videoObj = caseItem.videos.find(vid => vid.obj_file === p1);
+            if (videoObj) {
+                return `<video src="${videoObj.video_path}" autoplay loop muted controls style="width: 150px; height: auto; margin: 0 5px; display: inline-block;"></video>`;
+            } else {
+                return `<span style="color: red;">Video for OBJ ${p1} not found</span>`;
+            }
+            });
+
+            inputText.innerHTML = ideaHTML;
+            cardBody.appendChild(inputText);
+
+
+            //   inputText.innerHTML = ideaHTML;
+            //   cardBody.appendChild(inputText);
+
+              // 显示 GT 内容
+              const gtTitle = document.createElement('h5');
+              gtTitle.innerText = "GT:";
+              gtTitle.style.fontWeight = 'bold';
+              cardBody.appendChild(gtTitle);
+
+              const gtText = document.createElement('p');
+              gtText.className = 'card-text';
+              gtText.innerText = caseItem.gt;
+              cardBody.appendChild(gtText);
+
+              // 显示 Output 内容
+              if (caseItem.outputs) {
+                const outputsTitle = document.createElement('h5');
+                outputsTitle.innerText = "Output:";
+                outputsTitle.style.fontWeight = 'bold';
+                cardBody.appendChild(outputsTitle);
+
+                const outputMediaContainer = document.createElement('div');
+                outputMediaContainer.className = 'output-media-container';
+
+                // 遍历 outputs 对象
+                for (const [key, value] of Object.entries(caseItem.outputs)) {
+                  const outputVid = document.createElement('video');
+                  outputVid.className = 'video-zoom-container';
+                  outputVid.controls = true;
+                  outputVid.width = 300;
+                  outputVid.poster = 'img/spinner.svg';
+                  outputVid.src = value;
+                  outputVid.autoplay = true; // 自动播放
+                  outputVid.loop = true; // 循环播放
+                  outputVid.muted = true; // 静音以确保自动播放
+                  outputVid.alt = `${key} Output`;
+                  outputMediaContainer.appendChild(outputVid);
+                }
+
+                cardBody.appendChild(outputMediaContainer);
+              }
+
+              card.appendChild(cardBody);
+              caseCol.appendChild(card);
+              container.appendChild(caseCol);
+            });
+
+
+            // 实现延迟加载（如果需要）
+            /*
+            const lazyVideos = document.querySelectorAll('video.lazy-video');
+            const videoObserver = new IntersectionObserver((entries, observer) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  const video = entry.target;
+                  video.src = video.getAttribute('data-src');
+                  video.classList.remove('lazy-video');
+                  observer.unobserve(video);
+                }
+              });
+            }, {
+              rootMargin: '0px 0px 50px 0px',
+              threshold: 0.01
+            });
+
+            lazyVideos.forEach(video => {
+              videoObserver.observe(video);
+            });
+            */
+          }
+
+          // 搜索功能
+          const searchInput = document.getElementById('search-input');
+          searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const filteredCases = allCases.filter(caseItem => {
+              return caseItem.case_id.toLowerCase().includes(query) ||
+                caseItem.idea.toLowerCase().includes(query) ||
+                caseItem.gt.toLowerCase().includes(query);
+            });
+            renderCases(filteredCases);
+          });
+
+          // 初始渲染所有案例
+          renderCases(allCases);
+        })
+        .catch(error => console.error('Error loading cases:', error));
+    });
+  </script>
+
 </body>
 
 </html>

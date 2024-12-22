@@ -1,0 +1,1 @@
+Combine <OBJ>water_bottle.obj</OBJ> with 'Bulbasaur's plant bulb' to create a Bulbasaur-themed water bottle.

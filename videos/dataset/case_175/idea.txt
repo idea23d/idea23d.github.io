@@ -1,0 +1,1 @@
+Combine <OBJ>notebook.obj</OBJ> with 'Bulbasaur's plant bulb' to create a Bulbasaur-themed notebook.

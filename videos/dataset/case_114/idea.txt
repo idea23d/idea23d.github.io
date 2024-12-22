@@ -1,0 +1,1 @@
+Combine <IMG>Pokeball.png</IMG> with 'storage functionality' to create a storage Pokeball.

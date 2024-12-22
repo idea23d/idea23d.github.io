@@ -1,0 +1,5 @@
+The 3D model now features a backpack with an Eevee-themed design, incorporating Eevee's distinctive bushy tail. The backpack retains its modern, sleek appearance with a rounded top and multiple compartments, maintaining its functional design. The front view still shows the prominent zippered pocket for easy access, while the sides display the padded, adjustable shoulder straps for comfort.
+
+However, the design now includes a playful element—Eevee's bushy tail, which adds a unique, whimsical touch to the backpack. The tail is integrated seamlessly into the design, mimicking the fluffy, layered appearance typical of Eevee, with a rich brown color and lighter tip.
+
+The OBJ file, backpack.obj, represents the original sleek backpack model. It showcases a streamlined shape, durable reinforcement, and a dark color scheme suitable for various environments. The addition of Eevee's tail brings a creative twist, transforming the backpack into a fun, themed accessory.

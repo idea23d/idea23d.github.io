@@ -1,0 +1,1 @@
+Combine <OBJ>umbrella.obj</OBJ> with <OBJ>Jigglypuff.obj</OBJ> to create a Jigglypuff-themed umbrella.

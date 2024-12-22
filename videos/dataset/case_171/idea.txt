@@ -1,0 +1,1 @@
+Combine <OBJ>light_bulb.obj</OBJ> with 'Pikachu's lightning bolt' to create a Pikachu-shaped light bulb.

@@ -1,0 +1,1 @@
+Combine <OBJ>lamp.obj</OBJ> with <OBJ>light_bulb.obj</OBJ> to create an innovative lamp with interchangeable light bulbs.

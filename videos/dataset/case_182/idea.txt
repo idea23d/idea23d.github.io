@@ -1,0 +1,1 @@
+Integrate <IMG>butterfly.png</IMG> with <OBJ>umbrella.obj</OBJ> to create an umbrella with butterfly wings.

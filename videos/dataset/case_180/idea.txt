@@ -1,0 +1,1 @@
+Attach the head of <IMG>lion.png</IMG> to <OBJ>car.obj</OBJ> to create a car with a lion's head grille.

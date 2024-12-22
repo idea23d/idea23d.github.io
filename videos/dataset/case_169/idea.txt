@@ -1,0 +1,1 @@
+Combine <OBJ>mirror.obj</OBJ> with 'Charmander's flame tail' to create a Charmander-themed mirror.

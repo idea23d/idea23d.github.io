@@ -1,0 +1,1 @@
+Combine <OBJ>computer.obj</OBJ> with <OBJ>mouse.obj</OBJ> to create a computer with an integrated mouse.

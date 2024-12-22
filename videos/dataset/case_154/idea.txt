@@ -1,0 +1,1 @@
+Combine <OBJ>battery.obj</OBJ> with <OBJ>Rocket.obj</OBJ> to create a Rocket-themed battery.

@@ -1,0 +1,1 @@
+Combine <OBJ>soap.obj</OBJ> with <OBJ>Totoro.obj</OBJ> to create a Totoro-themed soap.

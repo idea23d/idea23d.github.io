@@ -1,0 +1,5 @@
+The 3D model now features a Bulbasaur-themed water bottle, creatively integrating the design elements of Bulbasaur's plant bulb onto the bottle's structure. The original bottle maintains its cylindrical body with a slight taper towards the top and a gentle curve for ergonomic grip. The base remains rounded for stability. The neck and screw cap are present, with the cap appearing in a darker shade.
+
+The transformation includes the addition of Bulbasaur's plant bulb, which is seamlessly integrated into the design. The bulb's characteristic bulbous shape and texture are incorporated into the bottle, enhancing its aesthetic appeal with a unique, nature-inspired theme. This addition mimics the vibrant green color and organic form of Bulbasaur's bulb, creating a playful and distinctive look.
+
+The OBJ file, water_bottle.obj, represents the original model of a standard plastic bottle with a smooth, glossy texture and a light blue color. The model is minimalist, with no visible labels, making it ideal for customization like the addition of Bulbasaur's plant bulb design.

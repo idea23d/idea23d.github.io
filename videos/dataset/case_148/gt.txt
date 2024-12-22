@@ -1,0 +1,5 @@
+The 3D model now presents a Snorlax-themed hairbrush, creatively combining the features of both models. The hairbrush retains its original elongated handle and broad, flat head but is now adorned with Snorlax-themed details. The handle, still ergonomic and light brown, complements the transformation by incorporating Snorlax's blue and creamy beige color scheme.
+
+The brush head features Snorlax's smiling face, with small eyes and a round nose, seamlessly integrated into the design. The bristles remain numerous and evenly spaced, maintaining their functionality while adding a playful touch with the Snorlax motif. The back of the brush head, smooth and matching the handle, now includes elements reminiscent of Snorlax's rounded, chubby form, enhancing its whimsical appeal.
+
+The OBJ files, hairbrush.obj and Snorlax.obj, represent these respective models. The hairbrush model showcases a practical design with ergonomic features, while the Snorlax model captures a charming, cartoonish creature with a friendly appearance. The fusion results in a unique, Snorlax-inspired grooming accessory.

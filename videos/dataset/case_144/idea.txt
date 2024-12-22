@@ -1,0 +1,1 @@
+Combine <OBJ>shoes.obj</OBJ> with <OBJ>Eevee.obj</OBJ> to create Eevee-themed shoes.

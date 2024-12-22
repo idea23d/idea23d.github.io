@@ -1,0 +1,1 @@
+Combine <OBJ>camera.obj</OBJ> with 'Doraemon's bamboo copter' to create a camera with Doraemon's bamboo copter.

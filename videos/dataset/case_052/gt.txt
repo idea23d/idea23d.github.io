@@ -1,0 +1,5 @@
+The 3D model now features a chair with a seat designed to resemble a lily pad, integrating elements from both the chair model and the lily pad image. The chair maintains its modern, minimalist design, with a sleek, concave seat. However, the seat has been transformed to mimic the appearance of a large, green lily pad, complete with a round, textured surface that is visually reminiscent of a natural lily pad floating on water. The metal frame and legs remain unchanged, providing stability and a contemporary aesthetic.
+
+The lily pad seat retains its vibrant green color and detailed texture, adding a natural and organic element to the chair's design. This transformation results in a unique piece of furniture that combines the modern elegance of the original chair with the tranquil and natural beauty of a lily pad.
+
+The OBJ file, chair.obj, represents the original modern chair model with a minimalist design, while the image, lily_pad.png, provides the visual inspiration for the seat, depicting a serene water scene with a prominent white water lily and surrounding green lily pads.

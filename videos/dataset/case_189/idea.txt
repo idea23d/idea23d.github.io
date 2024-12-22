@@ -1,0 +1,1 @@
+Combine <IMG>butterfly.png</IMG> with <OBJ>lamp.obj</OBJ> to create a lamp inspired by butterfly wings.

@@ -1,0 +1,1 @@
+Replace the roof of <OBJ>house.obj</OBJ> with the style of <OBJ>castle.obj</OBJ>.

@@ -1,0 +1,1 @@
+Combine <OBJ>flashlight.obj</OBJ> with <OBJ>Charmander.obj</OBJ> to create a Charmander-themed flashlight.

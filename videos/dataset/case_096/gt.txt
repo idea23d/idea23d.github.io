@@ -1,0 +1,5 @@
+The 3D model now features a unique hybrid of R2-D2 and Moltres, resulting in an R2D2-Moltres robot. The primary structure remains that of R2-D2, with its cylindrical body and domed head, maintaining the mechanical and futuristic appearance. The body is primarily white with blue accents, and it stands on three legs, each with orange details on the feet. The dome retains its large black sensor and geometric panels.
+
+Incorporating elements of Moltres, the model features vibrant, flame-like decorations reminiscent of Moltres’ fiery appearance. The domed head of R2-D2 is adorned with orange, flame-like spines, enhancing the dynamic look. The robot also has large wings with yellow membranes and red edges, adding a playful and energetic demeanor to the previously mechanical form. The tail, ending in a vibrant flame, further emphasizes the fiery transformation.
+
+The images R2D2.png and Moltres.png serve as references for this creative combination. R2D2.png showcases the classic toy robot design with a mechanical and science fiction theme, while Moltres.png depicts a colorful, cartoon-style dragon with fiery features and a lively expression.

@@ -1,0 +1,7 @@
+The 3D model now features a lamp designed to resemble a sunflower, integrating the vibrant elements of the sunflower image with the classic structure of the lamp. The lampshade has been transformed to mimic the sunflower's bright yellow petals, which radiate outward in a circular pattern, capturing the vivid and consistent yellow hue seen in the image. The center of the lampshade emulates the dark central disk and spiral arrangement of smaller brownish seeds, enhancing the sunflower likeness.
+
+The lamp's base retains its elegant and sophisticated vintage design, with carved, symmetrical curves and a polished finish, providing a sturdy foundation. The conical shape of the original lampshade is adapted to accommodate the sunflower's radial petal layout, creating a harmonious blend of floral and functional elements.
+
+The resulting design combines the cheerful and natural aesthetics of a sunflower with the traditional and practical features of a table lamp, making it a unique and eye-catching piece suitable for various interior settings.
+
+The inputs, sunflower.png and lamp.obj, represent the vibrant sunflower image and the classic table lamp model, respectively. The sunflower image contributes the bright yellow petals and dark center, while the lamp model provides the structural base and shading form.

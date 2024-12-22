@@ -1,0 +1,1 @@
+Merge <IMG>flower_bouquet.png</IMG> with <OBJ>chair.obj</OBJ> to design a chair adorned with a flower bouquet.

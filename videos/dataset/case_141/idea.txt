@@ -1,0 +1,1 @@
+Combine <OBJ>backpack.obj</OBJ> with <OBJ>water_bottle.obj</OBJ> to create a backpack with an integrated water bottle holder.

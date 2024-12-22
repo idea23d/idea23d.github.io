@@ -1,0 +1,1 @@
+Combine <OBJ>book.obj</OBJ> with 'Snorlax's sleepy design' to create a Snorlax-themed book.

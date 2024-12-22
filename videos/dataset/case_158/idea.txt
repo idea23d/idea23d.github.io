@@ -1,0 +1,1 @@
+Combine <OBJ>towel.obj</OBJ> with 'Doraemon's gadget designs' to create a towel with built-in Doraemon gadgets.

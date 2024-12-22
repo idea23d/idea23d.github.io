@@ -1,0 +1,1 @@
+Attach the wings of <IMG>peacock.png</IMG> to <OBJ>fountain.obj</OBJ> to create a peacock-themed fountain.

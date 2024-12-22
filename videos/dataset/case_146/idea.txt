@@ -1,0 +1,1 @@
+Combine <OBJ>cup_coaster.obj</OBJ> with <OBJ>Pikachu.obj</OBJ> to create a Pikachu-themed cup coaster.

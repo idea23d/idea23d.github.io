@@ -1,0 +1,1 @@
+Combine <OBJ>hairbrush.obj</OBJ> with <OBJ>Snorlax.obj</OBJ> to create a Snorlax-themed hairbrush.
